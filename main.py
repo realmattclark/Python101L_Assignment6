@@ -43,7 +43,7 @@ def decryption():
             new_character = chr(new_unicode)
             decrypt = decrypt - new_character
         else:
-            decrypt -= i
+            decrypt += i
 
     print('Ecrypted text: ', user_text)
     print('Plain text: ', decrypt)
@@ -56,7 +56,7 @@ while True:
     options = menu.keys()
     for entry in options:
          print(entry, menu[entry])
-    selection = int(input('Please select'))
+    selection = int(input('Please select '))
     if selection == 1:
         encryption()
     elif selection == 2:
